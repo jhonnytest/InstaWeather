@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		343296341BCEA68C00C70E1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343296331BCEA68C00C70E1C /* AppDelegate.swift */; };
+		343296371BCEA68C00C70E1C /* InstaWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 343296351BCEA68C00C70E1C /* InstaWeather.xcdatamodeld */; };
+		343296391BCEA68C00C70E1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343296381BCEA68C00C70E1C /* ViewController.swift */; };
+		3432963C1BCEA68C00C70E1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3432963A1BCEA68C00C70E1C /* Main.storyboard */; };
+		3432963E1BCEA68C00C70E1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3432963D1BCEA68C00C70E1C /* Images.xcassets */; };
+		343296411BCEA68C00C70E1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3432963F1BCEA68C00C70E1C /* LaunchScreen.xib */; };
+		3432964D1BCEA68C00C70E1C /* InstaWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3432964C1BCEA68C00C70E1C /* InstaWeatherTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		343296471BCEA68C00C70E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343296261BCEA68C00C70E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3432962D1BCEA68C00C70E1C;
+			remoteInfo = InstaWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3432962E1BCEA68C00C70E1C /* InstaWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		343296321BCEA68C00C70E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343296331BCEA68C00C70E1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		343296361BCEA68C00C70E1C /* InstaWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstaWeather.xcdatamodel; sourceTree = "<group>"; };
+		343296381BCEA68C00C70E1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3432963B1BCEA68C00C70E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3432963D1BCEA68C00C70E1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		343296401BCEA68C00C70E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		343296461BCEA68C00C70E1C /* InstaWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3432964B1BCEA68C00C70E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3432964C1BCEA68C00C70E1C /* InstaWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaWeatherTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3432962B1BCEA68C00C70E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343296431BCEA68C00C70E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		343296251BCEA68C00C70E1C = {
+			isa = PBXGroup;
+			children = (
+				343296301BCEA68C00C70E1C /* InstaWeather */,
+				343296491BCEA68C00C70E1C /* InstaWeatherTests */,
+				3432962F1BCEA68C00C70E1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3432962F1BCEA68C00C70E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3432962E1BCEA68C00C70E1C /* InstaWeather.app */,
+				343296461BCEA68C00C70E1C /* InstaWeatherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343296301BCEA68C00C70E1C /* InstaWeather */ = {
+			isa = PBXGroup;
+			children = (
+				343296331BCEA68C00C70E1C /* AppDelegate.swift */,
+				343296381BCEA68C00C70E1C /* ViewController.swift */,
+				3432963A1BCEA68C00C70E1C /* Main.storyboard */,
+				3432963D1BCEA68C00C70E1C /* Images.xcassets */,
+				3432963F1BCEA68C00C70E1C /* LaunchScreen.xib */,
+				343296351BCEA68C00C70E1C /* InstaWeather.xcdatamodeld */,
+				343296311BCEA68C00C70E1C /* Supporting Files */,
+			);
+			path = InstaWeather;
+			sourceTree = "<group>";
+		};
+		343296311BCEA68C00C70E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				343296321BCEA68C00C70E1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		343296491BCEA68C00C70E1C /* InstaWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				3432964C1BCEA68C00C70E1C /* InstaWeatherTests.swift */,
+				3432964A1BCEA68C00C70E1C /* Supporting Files */,
+			);
+			path = InstaWeatherTests;
+			sourceTree = "<group>";
+		};
+		3432964A1BCEA68C00C70E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3432964B1BCEA68C00C70E1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3432962D1BCEA68C00C70E1C /* InstaWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343296501BCEA68C00C70E1C /* Build configuration list for PBXNativeTarget "InstaWeather" */;
+			buildPhases = (
+				3432962A1BCEA68C00C70E1C /* Sources */,
+				3432962B1BCEA68C00C70E1C /* Frameworks */,
+				3432962C1BCEA68C00C70E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaWeather;
+			productName = InstaWeather;
+			productReference = 3432962E1BCEA68C00C70E1C /* InstaWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		343296451BCEA68C00C70E1C /* InstaWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343296531BCEA68C00C70E1C /* Build configuration list for PBXNativeTarget "InstaWeatherTests" */;
+			buildPhases = (
+				343296421BCEA68C00C70E1C /* Sources */,
+				343296431BCEA68C00C70E1C /* Frameworks */,
+				343296441BCEA68C00C70E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343296481BCEA68C00C70E1C /* PBXTargetDependency */,
+			);
+			name = InstaWeatherTests;
+			productName = InstaWeatherTests;
+			productReference = 343296461BCEA68C00C70E1C /* InstaWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		343296261BCEA68C00C70E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = SimplyApp;
+				TargetAttributes = {
+					3432962D1BCEA68C00C70E1C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					343296451BCEA68C00C70E1C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3432962D1BCEA68C00C70E1C;
+					};
+				};
+			};
+			buildConfigurationList = 343296291BCEA68C00C70E1C /* Build configuration list for PBXProject "InstaWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 343296251BCEA68C00C70E1C;
+			productRefGroup = 3432962F1BCEA68C00C70E1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3432962D1BCEA68C00C70E1C /* InstaWeather */,
+				343296451BCEA68C00C70E1C /* InstaWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3432962C1BCEA68C00C70E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3432963C1BCEA68C00C70E1C /* Main.storyboard in Resources */,
+				343296411BCEA68C00C70E1C /* LaunchScreen.xib in Resources */,
+				3432963E1BCEA68C00C70E1C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343296441BCEA68C00C70E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3432962A1BCEA68C00C70E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343296391BCEA68C00C70E1C /* ViewController.swift in Sources */,
+				343296371BCEA68C00C70E1C /* InstaWeather.xcdatamodeld in Sources */,
+				343296341BCEA68C00C70E1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343296421BCEA68C00C70E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3432964D1BCEA68C00C70E1C /* InstaWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		343296481BCEA68C00C70E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3432962D1BCEA68C00C70E1C /* InstaWeather */;
+			targetProxy = 343296471BCEA68C00C70E1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3432963A1BCEA68C00C70E1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3432963B1BCEA68C00C70E1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3432963F1BCEA68C00C70E1C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				343296401BCEA68C00C70E1C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3432964E1BCEA68C00C70E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3432964F1BCEA68C00C70E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		343296511BCEA68C00C70E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstaWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		343296521BCEA68C00C70E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstaWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		343296541BCEA68C00C70E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InstaWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaWeather.app/InstaWeather";
+			};
+			name = Debug;
+		};
+		343296551BCEA68C00C70E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InstaWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaWeather.app/InstaWeather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		343296291BCEA68C00C70E1C /* Build configuration list for PBXProject "InstaWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3432964E1BCEA68C00C70E1C /* Debug */,
+				3432964F1BCEA68C00C70E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343296501BCEA68C00C70E1C /* Build configuration list for PBXNativeTarget "InstaWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343296511BCEA68C00C70E1C /* Debug */,
+				343296521BCEA68C00C70E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		343296531BCEA68C00C70E1C /* Build configuration list for PBXNativeTarget "InstaWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343296541BCEA68C00C70E1C /* Debug */,
+				343296551BCEA68C00C70E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		343296351BCEA68C00C70E1C /* InstaWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				343296361BCEA68C00C70E1C /* InstaWeather.xcdatamodel */,
+			);
+			currentVersion = 343296361BCEA68C00C70E1C /* InstaWeather.xcdatamodel */;
+			path = InstaWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 343296261BCEA68C00C70E1C /* Project object */;
+}
