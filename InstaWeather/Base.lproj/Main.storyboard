@@ -1,25 +1,288 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A225f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tbW-bh-WeJ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="JFo-yV-CaE">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tbW-bh-WeJ" customClass="ViewController" customModule="InstaWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="xL8-4u-KLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="haM-Qn-sPH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="XkA-0z-InP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search any place" translatesAutoresizingMaskIntoConstraints="NO" id="wyB-te-Lqd">
+                                <rect key="frame" x="8" y="28" width="584" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DyY-ek-Ctf"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tbW-bh-WeJ" id="5Do-0a-9wY"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tvz-3D-LcP">
+                                <rect key="frame" x="8" y="72" width="584" height="0.0"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="x8X-X3-nTN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="tbW-bh-WeJ" id="4kx-fb-tTq"/>
+                                    <outlet property="delegate" destination="tbW-bh-WeJ" id="73C-k9-HLc"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Report" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LP-Ta-edp">
+                                <rect key="frame" x="16" y="170" width="568" height="60"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9Bc-xx-7dp"/>
+                                    <constraint firstAttribute="height" constant="60" id="Itz-2M-3dR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="24"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Bc-xx-7dp"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LP7-aj-n5B">
+                                <rect key="frame" x="304" y="255" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7yb-1P-Opd"/>
+                                    <constraint firstAttribute="height" constant="30" id="8Nr-Fm-PMU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="clp-66-wEC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7yb-1P-Opd"/>
+                                        <exclude reference="clp-66-wEC"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Giz-4O-Cly">
+                                <rect key="frame" x="304" y="293" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Z4h-V3-qQX"/>
+                                    <constraint firstAttribute="height" constant="30" id="f2G-By-gtM"/>
+                                    <constraint firstAttribute="width" constant="200" id="mXD-Zi-Ofl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mXD-Zi-Ofl"/>
+                                        <exclude reference="Z4h-V3-qQX"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pres" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHx-XU-Kvw">
+                                <rect key="frame" x="304" y="331" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8aa-nd-zab"/>
+                                    <constraint firstAttribute="width" constant="200" id="MFk-rS-8zl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="wm6-gH-zBx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wm6-gH-zBx"/>
+                                        <exclude reference="MFk-rS-8zl"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFK-Uf-yGK">
+                                <rect key="frame" x="16" y="255" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cxo-VZ-fe5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Xza-5h-4QL"/>
+                                    <constraint firstAttribute="width" constant="120" id="ac6-5K-TNC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="gAd-3d-Agb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gAd-3d-Agb"/>
+                                        <exclude reference="ac6-5K-TNC"/>
+                                        <exclude reference="Xza-5h-4QL"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCY-qI-HPK">
+                                <rect key="frame" x="16" y="293" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="60A-Nm-4Hj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VlC-4b-f4N"/>
+                                    <constraint firstAttribute="height" constant="30" id="m00-V1-VXo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="mYq-pw-zbS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VlC-4b-f4N"/>
+                                        <exclude reference="60A-Nm-4Hj"/>
+                                        <exclude reference="mYq-pw-zbS"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJw-5C-nqK">
+                                <rect key="frame" x="16" y="331" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2pb-m1-V3C"/>
+                                    <constraint firstAttribute="width" constant="120" id="ELt-hS-UPV"/>
+                                    <constraint firstAttribute="height" constant="30" id="VIB-q8-jN1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="bGv-IV-jLH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ELt-hS-UPV"/>
+                                        <exclude reference="2pb-m1-V3C"/>
+                                        <exclude reference="bGv-IV-jLH"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRo-wP-gvh">
+                                <rect key="frame" x="16" y="369" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="GWD-DF-mUZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="HPQ-zI-8Rp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="gsB-nF-X4h"/>
+                                    <constraint firstAttribute="width" constant="120" id="rm3-Mt-RVe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rm3-Mt-RVe"/>
+                                        <exclude reference="GWD-DF-mUZ"/>
+                                        <exclude reference="gsB-nF-X4h"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngn-do-GMq">
+                                <rect key="frame" x="304" y="369" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D8s-th-hCO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="RHr-uk-qSq"/>
+                                    <constraint firstAttribute="width" constant="200" id="io9-oz-pP6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29842769130000002" green="0.6577263874" blue="0.95926036010000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RHr-uk-qSq"/>
+                                        <exclude reference="io9-oz-pP6"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LP7-aj-n5B" firstAttribute="leading" secondItem="dFK-Uf-yGK" secondAttribute="trailing" constant="8" id="2lv-gx-QV5"/>
+                            <constraint firstAttribute="trailing" secondItem="Giz-4O-Cly" secondAttribute="trailing" constant="16" id="3Bb-tb-vjy"/>
+                            <constraint firstAttribute="centerY" secondItem="3LP-Ta-edp" secondAttribute="centerY" constant="100" id="4Ap-wh-NWC"/>
+                            <constraint firstAttribute="trailing" secondItem="3LP-Ta-edp" secondAttribute="trailing" constant="16" id="6pE-oC-qM2"/>
+                            <constraint firstItem="tJw-5C-nqK" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="16" id="AQH-mZ-wTF"/>
+                            <constraint firstItem="dFK-Uf-yGK" firstAttribute="leading" secondItem="JCY-qI-HPK" secondAttribute="leading" id="ASp-h6-hbh"/>
+                            <constraint firstItem="dFK-Uf-yGK" firstAttribute="leading" secondItem="tJw-5C-nqK" secondAttribute="leading" id="Biu-mp-T93"/>
+                            <constraint firstItem="haM-Qn-sPH" firstAttribute="top" secondItem="yRo-wP-gvh" secondAttribute="bottom" constant="24" id="CY6-YM-gFy"/>
+                            <constraint firstItem="LP7-aj-n5B" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="8" id="ChW-n8-ST8"/>
+                            <constraint firstItem="dFK-Uf-yGK" firstAttribute="top" secondItem="3LP-Ta-edp" secondAttribute="bottom" constant="25" id="EdZ-ay-RRQ"/>
+                            <constraint firstItem="Giz-4O-Cly" firstAttribute="leading" secondItem="JCY-qI-HPK" secondAttribute="trailing" constant="8" id="ElX-Li-gSv"/>
+                            <constraint firstItem="yRo-wP-gvh" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="16" id="FnR-fL-UqL"/>
+                            <constraint firstAttribute="trailing" secondItem="Tvz-3D-LcP" secondAttribute="trailing" constant="8" id="H46-xj-e1O"/>
+                            <constraint firstItem="tJw-5C-nqK" firstAttribute="top" secondItem="JCY-qI-HPK" secondAttribute="bottom" constant="8" id="HYA-Kc-bNc"/>
+                            <constraint firstItem="dFK-Uf-yGK" firstAttribute="leading" secondItem="yRo-wP-gvh" secondAttribute="leading" id="K2z-GD-9ga"/>
+                            <constraint firstAttribute="trailing" secondItem="wyB-te-Lqd" secondAttribute="trailing" constant="8" id="LPn-Kg-Gdy"/>
+                            <constraint firstItem="JCY-qI-HPK" firstAttribute="width" secondItem="Giz-4O-Cly" secondAttribute="width" id="Lv0-SM-4kE"/>
+                            <constraint firstItem="yRo-wP-gvh" firstAttribute="width" secondItem="Ngn-do-GMq" secondAttribute="width" id="NLR-2x-GES"/>
+                            <constraint firstAttribute="trailing" secondItem="rHx-XU-Kvw" secondAttribute="trailing" constant="16" id="PCG-Kk-8hy"/>
+                            <constraint firstItem="JCY-qI-HPK" firstAttribute="top" secondItem="dFK-Uf-yGK" secondAttribute="bottom" constant="8" id="QhB-wL-RuH"/>
+                            <constraint firstItem="Tvz-3D-LcP" firstAttribute="top" secondItem="wyB-te-Lqd" secondAttribute="bottom" id="T0F-pL-FrW"/>
+                            <constraint firstAttribute="trailing" secondItem="Ngn-do-GMq" secondAttribute="trailing" constant="16" id="TXM-Qc-BDp"/>
+                            <constraint firstItem="rHx-XU-Kvw" firstAttribute="leading" secondItem="tJw-5C-nqK" secondAttribute="trailing" constant="8" id="Ywz-vr-6EM"/>
+                            <constraint firstItem="yRo-wP-gvh" firstAttribute="top" secondItem="tJw-5C-nqK" secondAttribute="bottom" constant="8" id="bKt-Wr-QNG"/>
+                            <constraint firstItem="wyB-te-Lqd" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="8" id="cH8-U7-LgU"/>
+                            <constraint firstItem="Tvz-3D-LcP" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="8" id="dHx-Wr-23E"/>
+                            <constraint firstItem="rHx-XU-Kvw" firstAttribute="width" secondItem="tJw-5C-nqK" secondAttribute="width" id="eZe-KF-msG"/>
+                            <constraint firstItem="dFK-Uf-yGK" firstAttribute="width" secondItem="LP7-aj-n5B" secondAttribute="width" id="ecv-pC-joQ"/>
+                            <constraint firstItem="dFK-Uf-yGK" firstAttribute="centerY" secondItem="LP7-aj-n5B" secondAttribute="centerY" id="g7S-af-tW6"/>
+                            <constraint firstItem="dFK-Uf-yGK" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="16" id="gfI-5U-Qgl"/>
+                            <constraint firstItem="wyB-te-Lqd" firstAttribute="top" secondItem="xL8-4u-KLe" secondAttribute="bottom" constant="8" id="ho4-Zu-jjW"/>
+                            <constraint firstItem="Giz-4O-Cly" firstAttribute="top" secondItem="LP7-aj-n5B" secondAttribute="bottom" constant="8" id="ixs-qT-L6Y"/>
+                            <constraint firstAttribute="trailing" secondItem="LP7-aj-n5B" secondAttribute="trailing" constant="16" id="kJm-Tk-URs"/>
+                            <constraint firstItem="3LP-Ta-edp" firstAttribute="top" secondItem="Tvz-3D-LcP" secondAttribute="bottom" constant="24" id="lu0-Lv-BXK"/>
+                            <constraint firstItem="Ngn-do-GMq" firstAttribute="top" secondItem="rHx-XU-Kvw" secondAttribute="bottom" constant="8" id="ofY-Ka-YDC"/>
+                            <constraint firstItem="3LP-Ta-edp" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="16" id="p2C-Eu-TLd"/>
+                            <constraint firstItem="Ngn-do-GMq" firstAttribute="leading" secondItem="yRo-wP-gvh" secondAttribute="trailing" constant="8" id="uVD-LA-tJ7"/>
+                            <constraint firstAttribute="centerX" secondItem="3LP-Ta-edp" secondAttribute="centerX" id="wYq-le-qnF"/>
+                            <constraint firstItem="rHx-XU-Kvw" firstAttribute="top" secondItem="Giz-4O-Cly" secondAttribute="bottom" constant="8" id="yL6-Yh-O27"/>
+                            <constraint firstItem="JCY-qI-HPK" firstAttribute="leading" secondItem="XkA-0z-InP" secondAttribute="leading" constant="16" id="zF3-06-OFX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wYq-le-qnF"/>
+                                <exclude reference="lu0-Lv-BXK"/>
+                                <exclude reference="zF3-06-OFX"/>
+                                <exclude reference="AQH-mZ-wTF"/>
+                                <exclude reference="FnR-fL-UqL"/>
+                                <exclude reference="ChW-n8-ST8"/>
+                                <exclude reference="CY6-YM-gFy"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="constraintForTableViewHeight" destination="x8X-X3-nTN" id="qkT-fB-svL"/>
+                        <outlet property="humidityLabel" destination="Giz-4O-Cly" id="dz5-tD-8wS"/>
+                        <outlet property="humidityTitleLabel" destination="JCY-qI-HPK" id="w6S-6F-LEZ"/>
+                        <outlet property="pressureLabel" destination="rHx-XU-Kvw" id="vue-f6-Ryf"/>
+                        <outlet property="pressureTitleLabel" destination="tJw-5C-nqK" id="VZm-5f-hmn"/>
+                        <outlet property="searchBar" destination="wyB-te-Lqd" id="Xll-BY-sbI"/>
+                        <outlet property="suggestionsTableview" destination="Tvz-3D-LcP" id="WMD-q3-2RG"/>
+                        <outlet property="temperatureLabel" destination="LP7-aj-n5B" id="erX-b3-d6u"/>
+                        <outlet property="temperatureTitleLabel" destination="dFK-Uf-yGK" id="5th-j6-Ykd"/>
+                        <outlet property="weatherLabel" destination="3LP-Ta-edp" id="t7h-KU-neB"/>
+                        <outlet property="windLabel" destination="Ngn-do-GMq" id="qzY-NL-nj8"/>
+                        <outlet property="windTitleLabel" destination="yRo-wP-gvh" id="j9X-d4-Rha"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vd-cc-wif" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="308" y="351"/>
         </scene>
     </scenes>
 </document>
